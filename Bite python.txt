@@ -1,0 +1,42 @@
+from turtle import *
+import random
+
+def rcolor():
+    return float(random.randint(0, 255))/256
+
+penup()
+left(90)
+forward(100)
+right(90)
+pendown()
+
+left(-45)
+pensize(75)
+
+while True:
+    pencolor(rcolor(), rcolor(), rcolor())
+    circle(100, 360)
+    penup()
+    forward(200)
+    pendown()
+    circle(100, 360)
+    right(90)
+    forward(275)
+    right(90)
+    forward(200)
+    right(90)
+    forward(275)
+
+    right(180)
+    penup()
+    forward(275)
+    pendown()
+    circle(100, 90)
+    left(90)
+    forward(100)
+    penup()
+    right(180)
+    forward(100)
+    left(90)
+    pendown()
+    circle(100, 90)
